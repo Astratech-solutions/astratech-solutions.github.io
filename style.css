@@ -1,0 +1,177 @@
+.column {
+    width: 100%;
+}
+
+@media (min-width: 600px) {
+.column {
+    width: 50%;
+    }
+}
+
+/* Fondo de animación*/
+*{
+    margin: 0;
+    padding: 0;
+    box-shadow: border-box;
+    
+}
+body{
+    font-family: 'Poppins',sans-serif;
+    min-height: 100vh;
+    background: rgb(25, 84, 112);
+}
+
+/* Barra de Navegación */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a {
+    font-size: 20px;
+    font-weight: 600;
+    padding-right: 20px;
+    padding-left: 20px;
+    transition: 0.5s;
+}
+
+nav a:hover{
+    font-size: 27px;
+    text-shadow: 0px 0px 20px white;
+}
+
+/*header*/
+header{
+    display: flex;
+    height: 70px;
+    background-color: rgba(7, 41, 54,0.75);
+    backdrop-filter: blur(10px);
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    
+}
+
+/* Logo Header */
+.imgLogo {
+    display: flex;
+    align-items: center;
+}
+
+.imgLogo img {
+    height: 70px;
+    margin-right: 20px;
+}
+
+/* Animación */
+.container {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    
+}
+.bubbles {
+    position: relative;
+    display: flex;
+}
+.bubbles span{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #1d9cce;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #0b435a,
+    0 0 50px rgb(7, 41, 54),
+    0 0 100px rgb(7, 41, 54);
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s / var(--i));
+
+}
+.bubbles span:nth-child(even){
+    background: #1c8118;
+    box-shadow: 0 0 10px #44894e,
+    0 0 50px #24a035,
+    0 0 100px #24a035;
+}
+@keyframes animate{
+    0% { 
+        transform: translatey(100vh) scale(0);
+    }
+    100%{
+        transform: translatey(-10vh) scale(1);
+    }
+}
+
+
+
+/*Configuración de botones*/
+#boton{
+    position: relative;
+    background: transparent;
+    width: 75%;
+    height: auto;
+    left: 13%;
+    
+}
+.btnMenu{
+    display: inline-block;
+    width: 21%;
+    height: 60%;
+    margin: 10px;
+    position: relative;
+    margin-top: 5%;
+    cursor: pointer;
+    border: 3px rgb(7, 41, 54) solid;
+    background-color: rgba(7, 41, 54,0.33);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    transition: all 0.5s;
+    
+}
+.btnMenu .btnDesc{
+    text-shadow: -2px -2px 0 #1A87B3, 2px -2px 0 #1A87B3, -2px 2px 0 #1A87B3, 2px 2px 0 #1A87B3;
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.5s;
+    top: 10px;
+}
+.btnMenu .btnDesc:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -30px;
+    transition: 0.5s;
+}
+.btnMenu:hover .btnDesc{
+    padding-right: 25px;
+}
+.btnMenu:hover .btnDesc:after{
+    opacity: 1;
+    right: 0;
+}
+
+.btnTitulo{
+    text-align: center;
+    font-family: Poppins,sans-serif;
+    font-size: 24px;
+    height: 85px;
+}
+
+
+.btnImage{
+    position: relative;
+    background-color: transparent;
+    border-radius: 20px;
+    width: 80%;
+    height: 30vh;
+}
