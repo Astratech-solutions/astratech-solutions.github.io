@@ -1,4 +1,37 @@
 
+/* Resolucion movil */
+@media{ max-width: 767px;}|{
+    .desktop {
+        display:none;
+    }
+    .tablet {
+        display:none;
+    }
+
+}
+/* Resolucion tablet */
+@media{ min-width: 768px ; max-width: 990px;}|{
+    .desktop {
+        display:none;
+    }
+    .movil {
+        display:none;
+    }
+
+}
+/* Resolucion desktop */
+@media{ min-width: 991px;}|{
+    .tablet {
+        display:none;
+    }
+    
+    }
+    .movil {
+        display:none;
+    }
+
+}
+
 /* Fondo de animación*/
 *{
     margin: 0;
@@ -154,7 +187,7 @@ header{
 .btnTitulo{
     text-align: center;
     font-family: Poppins,sans-serif;
-    font-size: 24px;
+    font-size: 120%;
     height: 85px;
 }
 
