@@ -8,7 +8,7 @@
 
     }
 }
-@media(min-width : 768px) and (max-width: 1099px) {
+@media(min-width : 768px) and (max-width: 990px) {
     .desktop {display: none;
 
     }
@@ -16,7 +16,7 @@
 
     }
 }
-@media(min-width : 1100px){
+@media(min-width : 991px){
     .tablet {display: none;
 
     }
@@ -63,6 +63,7 @@
 .nombreAstra {
     background: transparent;
     color: white;
+    font-family: Poppins;
 }
 
 /* Barra de Navegación */
@@ -73,7 +74,8 @@ a {
 }
 
 nav a {
-    font-size: 20px;
+    font-family: Poppins;
+    font-size: 15px;
     font-weight: 600;
     padding-right: 20px;
     padding-left: 20px;
@@ -206,7 +208,7 @@ nav{
 }
 
 
-/*tablet8*/
+/*tablet*/
 
 #thead{
     display: flex;
@@ -219,10 +221,5 @@ nav{
     padding: 20px;
     position: relative; 
 }
-#thead .tlogo {
 
-}
-#thead img {
-    width: 20px;
-    height: 50px;
-}
+.t
