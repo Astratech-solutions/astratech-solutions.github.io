@@ -30,10 +30,16 @@
 *{
     background-color: #0b435a;
 }
+.desktop{
+    position: relative;
+    margin: 0 10%;
+    background-color: transparent;
+}
 
 /*header*/
 #dhead{
     display: flex;
+    width: 1000px;
     height: 30px;
     background-color: rgba(7, 41, 54,0.75);
     backdrop-filter: blur(10px);
@@ -48,6 +54,7 @@
 
 /* Logo Header */
 #dhead .imgLogo {
+    
     display: flex;
     align-items: center;
     background-color: transparent;
@@ -92,18 +99,25 @@ nav{
 }
 /*Configuración de botones*/
 #boton{
+    display: flex;
     position: relative;
     background: transparent;
+    width: 1000px;
     height: 400px;
-    padding: 0 12%;
+    margin: 0%;
+    padding: 20px;
 
     
 }
+#serv{
+    padding: 0 5%;
+    background: transparent;
+}
 .btnMenu{
     display: inline-block;
-    width: 22%;
-    height: 90%;
-    margin: 10px;
+    width: 210px;
+    height: 350px;
+    margin: 5px;
     position: relative;
     margin-top: 2%;
     cursor: pointer;
@@ -180,14 +194,14 @@ nav{
 }
 .bubbles span{
     position: relative;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     background: #1d9cce;
     margin: 0 4px;
-    border-radius: 50%;
+    border-radius: 60%;
     box-shadow: 0 0 10px #0b435a,
-    0 0 50px rgb(7, 41, 54),
-    0 0 100px rgb(7, 41, 54);
+    0 0 50px rgb(34, 177, 233),
+    0 0 100px rgb(36, 89, 110);
     animation: animate 15s linear infinite;
     animation-duration: calc(125s / var(--i));
 
@@ -195,8 +209,8 @@ nav{
 .bubbles span:nth-child(even){
     background: #1c8118;
     box-shadow: 0 0 10px #44894e,
-    0 0 50px #24a035,
-    0 0 100px #24a035;
+    0 0 20px #24a035,
+    0 0 50px #24a035;
 }
 @keyframes animate{
     0% { 
@@ -222,4 +236,3 @@ nav{
     position: relative; 
 }
 
-.t
