@@ -1,0 +1,71 @@
+/*tablet*/
+.tablet{
+    overflow: overlay;
+}
+#thead{
+    display: flex;
+    width: 900px;
+    height: 30px;
+    background-color: rgba(7, 41, 54,0.75);
+    backdrop-filter: blur(10px);
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    border: 0px auto;
+}
+/* Logo Header */
+#thead .tLogo {
+    
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: transparent;
+}
+
+.tLogo img {
+    height: 50px;
+    margin-right: 20px;
+    background: transparent;
+    border: transparent;
+}
+.tnombreAstra {
+    background: transparent;
+    color: white;
+    font-family: Poppins;
+    font-size: 150%;
+}
+
+/* Barra de Navegación */
+#thead a {
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+}
+
+#thead nav a {
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 600;
+    padding-right: 20px;
+    padding-left: 20px;
+    transition: 0.5s;
+    background-color: transparent;
+}
+
+#thead nav a:hover{
+    font-size: 20px;
+    text-shadow: 0px 0px 20px white;
+}
+#thead nav{
+    background-color: transparent;
+}
+#tserv{
+    border: 0px auto;
+    
+}
+#tboton{
+    background: rgb(164, 160, 160);
+    width: ;
+}
