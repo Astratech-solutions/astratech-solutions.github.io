@@ -1,6 +1,7 @@
 /* Fondo*/
 .desktop{
     width: 1200px;
+    height: 1369px;
     border: #4472C4 1px solid;
     border-radius: 50px;
     margin: 0px auto;
@@ -101,7 +102,9 @@
     transform: scale(1.1);
 }
 /* ####### Form bottom ####### */
-
+.form-bottom{
+    height: 30vh;
+}
 .form-info{
     display: inline-block;
     text-align: center;
@@ -109,6 +112,7 @@
     width: 50%;
     padding: 0 5%;
     float: left;
+    height: 247px;
 }
 
 .form-info ul b{
