@@ -1,5 +1,11 @@
 /* Fondo*/
-
+.desktop{
+    width: 1200px;
+    border: #4472C4 1px solid;
+    border-radius: 50px;
+    margin: 0px auto;
+    overflow: hidden;
+}
 .top-logo{
     display: flex;
     justify-content: center;
@@ -10,6 +16,7 @@
 .top-logo img{
     margin: 30px auto;
 }
+
 /* ####### Navigation bar ####### */
 .navi-bar{
     display: flex;
@@ -96,7 +103,7 @@
 /* ####### Form bottom ####### */
 
 .form-info{
-    display: flex;
+    display: inline-block;
     text-align: center;
     background: rgb(211, 235, 255);
     width: 50%;
