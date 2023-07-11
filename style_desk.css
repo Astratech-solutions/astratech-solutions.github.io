@@ -1,7 +1,7 @@
 /* Fondo*/
 .desktop{
     width: 1200px;
-    height: 1369px;
+    height: 1380px;
     border: #4472C4 1px solid;
     border-radius: 50px;
     margin: 0px auto;
@@ -111,7 +111,7 @@
     background: rgb(211, 235, 255);
     width: 50%;
     padding: 0 5%;
-    float: left;
+    float:left;
     height: 247px;
 }
 
