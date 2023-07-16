@@ -11,8 +11,7 @@
 .movil .top-logo img {
     width: 80%;
 }
-.movil nav{
-}
+
 .movil nav ul{
     display: flex;
     flex-wrap: nowrap;
@@ -21,12 +20,7 @@
     font-size: 80%;
 }
 
-.movil .form-well-container{
-    
-}
-.movil .form-welcome{
-    
-}
+
 .movil .form-mid{
     display: flex;
     flex-direction: column;
