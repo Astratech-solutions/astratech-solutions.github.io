@@ -1,0 +1,55 @@
+.movil body{
+    display: flex;
+    min-width: 360px;
+    max-width: 640px;
+    height: 200vh;
+    overflow: hidden;
+}
+.movil .top-logo{
+    display: flex;
+}
+.movil .top-logo img {
+    width: 80%;
+}
+.movil nav{
+}
+.movil nav ul{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.movil nav ul li a{
+    font-size: 80%;
+}
+
+.movil .form-well-container{
+    
+}
+.movil .form-welcome{
+    
+}
+.movil .form-mid{
+    display: flex;
+    flex-direction: column;
+}
+.movil .form-mid-blocks{
+    width: 50%;
+    margin: 2% auto;
+    font-size: 70%;
+}
+.movil footer{
+    display: block;
+}
+.movil footer .form-bottom{
+    display: flex;
+    width: min-content;
+}
+.movil footer .form-bottom{
+    display: flex;
+    width: max-content;
+    text-align: center;
+    margin: 10% auto;
+}
+.movil footer .form-bottom ul{
+    display: flex;
+    flex-direction: column;
+}
