@@ -5,10 +5,9 @@
     $asunto = $_POST['asunto'];
     $mensaje = $_POST['mensaje'];
 
-    $header = "From: noreply@astratechsolutionssac.com";
+    $header = "From: administradoras@astratechsolutionssac.com";
     $header = "Reply-To: " . $email . "\n";
     
-
     
     if (mail('administradoras@astratechsolutionssac.com', $asunto, $mensaje, $header)){
         echo "Correo enviado";
