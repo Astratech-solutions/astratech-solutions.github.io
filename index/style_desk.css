@@ -1,11 +1,6 @@
 /* Fondo*/
 .desktop{
-    width: 1200px;
-    height: 1380px;
-    border: #4472C4 1px solid;
-    border-radius: 50px;
-    margin: 0px auto;
-    overflow: hidden;
+height: 100vh;
 }
 .top-logo{
     display: flex;
@@ -144,7 +139,7 @@
     display: inline-block;
     background: #4472C4;
     width: 40%;
-    height: 100vh;
+    height: 247px;
 }
 
 .form-ubi label{
