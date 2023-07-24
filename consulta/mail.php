@@ -1,16 +1,19 @@
 <?php
-    $destinatario = 'administradoras@astratechsolutionssac.com';
+    
     $nombre = $_POST['nombre'];
     $email = $_POST['email'];
     $asunto = $_POST['asunto'];
     $mensaje = $_POST['mensaje'];
 
-    $header = "From: noreply@midominio.com\n";
-    $header = "Reply-To: adminstradoras@astratechsolutionssac.com\n";
+    $header = "From: noreply@astratechsolutionssac.com";
+    $header = "Reply-To: " . $email . "\n";
     
-
-    mail($destinatario, $asunto, $mensaje, $header);
-
+    mail('administradoras@astratechsolutionssac.com', $asunto, $mensaje, $header)
     
+    if (mail($destinatario, $asunto, $mensaje, $header)){
+        echo "Correo enviado";
+    }else{
+        echo "Ocurrió un problemaal enviar el correo";
+    }
     
 ?>
