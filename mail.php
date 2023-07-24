@@ -1,17 +1,20 @@
 <?php
-    if (isset($_POST['enviar'])){
-        if (!empty($_POST['name'] && !empty($_POST['email']) && !empty($_POST['asunto']) && !empty($_POST['mensaje']))){
-            $name = $_POST['name'];
-            $email = $_POST['email'];
-            $asunto = $_POST['asunto'];
-            $mensaje = $_POST['mensaje'];
-            $header = "From: noreply@astratechsolutionssac.com" . "\r\n";
-            $header.= "Reply-To: administradoras@astratechsolutionssac.com" . "\r\n";
-            $header.= "X-Mailer: PHP/" . phpversion();
-            $mail = @mail($email,$asunto,$mensaje,$header);
-            if ($mail){
-                echo "<h4>Correo enviado con éxito, te responderemos pronto</h4>";
-            }
-        }
-    }
+    // $destinatario = 'administradoras@astratechsolutionssac.com'
+    $destinatario = 'nerohack1974@gmail.com';
+    $nombre = $_POST['nombre'];
+    $email = $_POST['email'];
+    $asunto = $_POST['asunto'];
+    $mensaje = $_POST['mensaje'];
+
+    $header = 'Consultas ASTRATECH SOLUTIONS';
+    $mensajeCompleto = $mensaje . "\n\nDe: ". $nombre . "\nCorreo: " . $email;
+
+    mail($destinatario, $asunto, $mensajeCompleto, $header);
+
+    echo "
+    <script>
+    alert('Correo enviado con éxito. Pronto te responderemos!')</script>";
+    echo "<script>
+    setTimeout(\"location.href='index.html'\",1000)
+    </script>";
 ?>

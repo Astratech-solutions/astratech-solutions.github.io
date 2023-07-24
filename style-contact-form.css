@@ -25,7 +25,8 @@
     resize: none;
 }
 
-.form-container input[type="submit"]{
+.form-container button{
     width: 200px;
     margin: 10px auto 20px;
+    padding: 10px;
 }
