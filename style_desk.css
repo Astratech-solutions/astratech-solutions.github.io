@@ -102,8 +102,11 @@
     transform: scale(1.1);
 }
 /* ####### Form bottom ####### */
+
 .form-bottom{
     height: 30vh;
+    display: flex;
+    flex-direction: row;
 }
 .desktop footer .form-bottom .form-info , .tablet footer .form-info{
     display: inline-block;
@@ -141,6 +144,7 @@
     display: inline-block;
     background: #4472C4;
     width: 40%;
+    height: 100vh;
 }
 
 .form-ubi label{
