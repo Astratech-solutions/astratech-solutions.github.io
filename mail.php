@@ -1,13 +1,13 @@
 <?php
-    // $destinatario = 'administradoras@astratechsolutionssac.com'
-    $destinatario = 'nerohack1974@gmail.com';
+    $destinatario = 'administradoras@astratechsolutionssac.com';
     $nombre = $_POST['nombre'];
     $email = $_POST['email'];
     $asunto = $_POST['asunto'];
     $mensaje = $_POST['mensaje'];
 
-    $header = 'Consultas ASTRATECH SOLUTIONS';
-    $mensajeCompleto = $mensaje . "\n\nDe: " . $nombre . "\nCorreo: " . $email;
+    $header = "From: noreply@midominio.com\r\n";
+    $header .= "Reply-To: adminstradoras@astratechsolutionssac.com\r\n";
+    
 
     mail($destinatario, $asunto, $mensajeCompleto, $header);
 
