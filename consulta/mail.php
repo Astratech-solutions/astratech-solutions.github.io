@@ -8,9 +8,9 @@
     $header = "From: noreply@astratechsolutionssac.com";
     $header = "Reply-To: " . $email . "\n";
     
-    mail('administradoras@astratechsolutionssac.com', $asunto, $mensaje, $header)
+
     
-    if (mail($destinatario, $asunto, $mensaje, $header)){
+    if (mail('administradoras@astratechsolutionssac.com', $asunto, $mensaje, $header)){
         echo "Correo enviado";
     }else{
         echo "Ocurrió un problemaal enviar el correo";
