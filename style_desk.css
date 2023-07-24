@@ -114,7 +114,11 @@
     float: left;
     height: 247px;
 }
-
+.form-info .form-info-redes img{
+    width: 7%;
+    height: 7%;
+    border-radius: 50%;
+} 
 .form-info ul b{
     font-size: 17px;
 }
@@ -123,9 +127,15 @@
     display: inline-block;
     margin: 60px 40px;
 }
+.form-info ul{
+    display: flex;
+    flex-direction: column;
+}
 
 .form-info ul li a{
     color: black;
+    display: flex;
+    margin: 1% auto;
 }
 
 .form-ubi{
