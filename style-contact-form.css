@@ -1,0 +1,32 @@
+.form-container{
+    text-align: center;
+    margin: 40px auto;
+}
+
+.form-container .formulario{
+    align-items: center;
+    width: 800px;
+    min-width: 600px;
+    margin: auto;
+}
+.form-container .formulario h2{
+    float: left;
+    padding: 20px;
+}
+
+.form-container input, textarea{
+    width: 90%;
+    margin: 5px;
+    padding: 10px;
+}
+
+.form-container textarea{
+    height: 150px;
+    resize: none;
+}
+
+.form-container button{
+    width: 200px;
+    margin: 10px auto 20px;
+    padding: 10px;
+}
