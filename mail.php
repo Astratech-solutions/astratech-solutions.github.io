@@ -7,14 +7,13 @@
     $mensaje = $_POST['mensaje'];
 
     $header = 'Consultas ASTRATECH SOLUTIONS';
-    $mensajeCompleto = $mensaje . "\n\nDe: ". $nombre . "\nCorreo: " . $email;
+    $mensajeCompleto = $mensaje . "\n\nDe: " . $nombre . "\nCorreo: " . $email;
 
     mail($destinatario, $asunto, $mensajeCompleto, $header);
 
     echo "
     <script>
-    alert('Correo enviado con éxito. Pronto te responderemos!')</script>";
-    echo "<script>
-    setTimeout(\"location.href='index.html'\",1000)
+    alert('Correo enviado con éxito. Pronto te responderemos!')
     </script>";
+    
 ?>
