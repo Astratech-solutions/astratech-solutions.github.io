@@ -9,7 +9,7 @@
     $header .= "Reply-To: adminstradoras@astratechsolutionssac.com\r\n";
     
 
-    mail($destinatario, $asunto, $mensajeCompleto, $header);
+    mail($destinatario, $asunto, $mensaje, $header);
 
     echo "
     <script>
