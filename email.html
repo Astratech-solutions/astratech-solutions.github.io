@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+</head>
+<body>
+    <h1>Contacto</h1>
+    <form action="https://mail.zoho.com/api/accounts/823045029/messages" method="post">
+        <input type="hidden" name="fromAddress" value="basurto_a@astratech.solutions">
+        <input type="hidden" name="toAddress" value="antonymon3@gmail.com">
+        <input type="hidden" name="subject" value="Asunto del correo">
+        <textarea name="content">Contenido del correo</textarea>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
